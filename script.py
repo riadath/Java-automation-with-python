@@ -91,6 +91,7 @@ jacocoTestReport {
     }
     doLast {
         def coverageFile = new File("${buildDir}/reports/jacoco/test/jacocoTestReport.csv")
+        /*
         if (coverageFile.exists()) {
             println \"\\nCode Coverage Summary\"
             println \"===================\\n\"
@@ -102,6 +103,7 @@ jacocoTestReport {
             }
             println \"===================\"
         }
+        */
     }
 }
 """
